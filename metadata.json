@@ -1,0 +1,6 @@
+{
+  "name": "Retrieval Lab",
+  "description": "Interactive document retrieval system using embeddings and cosine similarity ranking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
