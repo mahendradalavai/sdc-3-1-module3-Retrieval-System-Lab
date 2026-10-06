@@ -59,9 +59,15 @@
 app/src/main/java/com/example/
 ├── MainActivity.kt               # Main entry point with Edge-to-Edge Navigation Suite
 ├── data/
-│   ├── Document.kt               # Document data models and search result entities
-│   ├── DocumentDao.kt            # Room DAO for corpus CRUD operations
-│   └── DocumentDatabase.kt       # Room Database with FloatArray type converters
+│   ├── model/
+│   │   ├── DocumentEntity.kt     # Room Document entity with FloatArray vector embedding
+│   │   └── RetrievalResult.kt    # Ranked query result models with cosine metrics
+│   ├── dao/
+│   │   └── DocumentDao.kt        # Room DAO for corpus CRUD operations
+│   ├── db/
+│   │   └── AppDatabase.kt        # Room Database with vector converters
+│   └── repository/
+│       └── DocumentRepository.kt # Repository abstraction for corpus management
 ├── engine/
 │   ├── BenchmarkEvaluator.kt     # Benchmark runner & Hit@K / MRR metrics calculator
 │   ├── DefaultCorpus.kt          # Curated multi-domain document corpus
